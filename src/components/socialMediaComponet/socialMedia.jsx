@@ -12,7 +12,7 @@ export default function socialMedia() {
                 <div className="left">
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/learnbuildteach" className="social">
+                            <a href="https://www.instagram.com/off_br0wn/" className="social">
                             <FontAwesomeIcon icon={faInstagram} size="2x" />
                             </a>
                         </li>
