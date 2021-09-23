@@ -20,7 +20,7 @@ export const featuredPortfolio = [
       title: "Personal Portfolio",
       img: "/assets/Portfolio.mp4",
       languageUsed : "ReactJS  HTML/SCSS ",
-      gitLink:"https://github.com/offbr0wn/Phish-website",
+      gitLink:"https://github.com/offbr0wn/Website-Porfolio",
       netLink:"https://weatheryapplication.netlify.app",
     },
 
@@ -55,7 +55,7 @@ export const featuredPortfolio = [
       title: "Personal Portfolio",
       img: "/assets/Portfolio.mp4",
       languageUsed : "ReactJS  HTML/SCSS ",
-      gitLink:"https://github.com/offbr0wn/Phising-Awareness-Website",
+      gitLink:"https://github.com/offbr0wn/Website-Porfolio",
       netLink:"https://weatheryapplication.netlify.app",
     },
 
