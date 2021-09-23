@@ -1,0 +1,72 @@
+
+@import "./global.scss";
+
+.loadingScreen{
+    
+    background-color:#2e2e2e;
+    
+    
+
+    .app{
+        min-height: 100vh;
+        
+        
+        line-height: 1.5;
+      
+        font-family: "Calibre","Inter","San Francisco","SF Pro Text",system-ui,sans-serif;
+       
+       
+        
+        
+        .sections{
+            
+           
+            
+            width: 100%;
+            
+            overflow: hidden;
+            
+            position: relative;
+            // top: 70px;
+            scroll-behavior: smooth;
+            // scroll-snap-type: y mandatory;
+            transition: all 0.5s ease-in-out;
+            scrollbar-width: none;//For firefox 
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            &::-webkit-scrollbar{
+                display: none;     //For other browsers 
+                scrollbar-width: none;
+             
+            }
+
+            >*{
+            width: 100vw;
+            height:calc(100vh - 10px) ;
+            // scroll-snap-align:start;
+            transition: all 1s ease;
+            padding-bottom: 20px;
+      
+
+            h1{
+                letter-spacing: 0.05em;
+            }
+            
+           
+            
+       
+            
+            
+            
+        }
+        }
+    }
+}

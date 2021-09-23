@@ -1,0 +1,165 @@
+@import "../../global.scss";
+
+
+.intro{
+    background-color: #2e2e2e;
+    // color: white;
+    display: flex;
+    padding-top: 40px;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    .left{
+
+        flex: 0.5;
+        
+        overflow: hidden;
+
+
+        .image{
+            width: 700px;
+            height: 700px;
+            background-color: crimson;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+            margin-top:60px;
+
+            @include mobile{
+                align-items: flex-start;
+                
+            }
+
+            img{
+                height :100%;
+                align-items: center;
+
+                display: flex;
+
+                @include mobile{
+                    height: 60%;
+                }
+               
+            }
+        }
+    }
+
+    .right{
+        position: relative;
+
+        flex: 0.5;
+        a{
+            position: absolute;
+            bottom: 60px;
+            left: 30%;
+            transform: rotate(-90deg);
+                    @include mobile{
+                        left:40%;
+                        bottom: 15%;
+                }
+
+
+            img{
+                width: 100px;
+                animation: arrowBlink 3s infinite;
+                @include mobile{
+                    width: 80px;
+                  
+            }
+                
+            }
+
+            @keyframes arrowBlink {
+              
+                100%{
+                   opacity: 0;
+
+                   animation: blink 3s ease-out;
+               } 
+               
+            }
+        }
+        .wrapper{
+            width :100%;
+            height:100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            color: white;
+            
+
+            @include mobile{
+                padding-left: 10px;
+                height: 80%;
+
+                
+            }
+
+
+            h1{
+
+                font-size: 60px;
+                margin: 10px 0;
+
+                @include mobile{
+                    font-size: 38px;
+                }
+
+            }
+
+            h2{
+                font-size: 35px;
+                
+                @include mobile{
+                    font-size: 30px;
+                }
+
+            }
+
+            h3{
+            
+               display: flex;
+               margin-top: -5px;
+              
+                @include mobile{
+                    font-size: 20px;
+                   
+                    
+                    
+
+                }
+                font-size: 30px;
+
+                span{
+                    font-size: inherit;
+                    color: crimson;
+                }
+
+                .ityped-cursor {
+                    font-size: 2.2rem;
+                    opacity: 1;
+                    animation: blink 0.3s infinite;
+                    animation-direction: alternate;
+                }
+                 
+                @keyframes blink {
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+
+
+            }
+
+        }
+        
+    }
+}

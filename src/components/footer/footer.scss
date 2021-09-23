@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+
+.footNote{
+
+    height: 100% !important;
+
+.left{
+    display: none;
+   
+
+    @include mobile{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -40px;
+        overflow: hidden;
+     
+        ul{
+            display: flex;
+            overflow: hidden;
+
+            a{
+                overflow: hidden;
+                letter-spacing: 1em;
+                margin: auto 1px;
+                padding: 0px 10px 0px ;
+               
+    
+                color: white;
+                text-decoration: none;
+                font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+                transition: transform 150ms;
+
+                &:hover{
+                    transform: translateY(-5px) rotateX(90deg) ;
+                    color: crimson;
+                    
+          
+                  }
+            }
+        }
+    }
+
+
+
+
+}
+
+.right{
+    background-color: #2e2e2e;
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    flex-direction: column;
+     height: 10vh !important;
+    position:sticky;
+
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+a{
+    text-decoration: none;
+    color: white;
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 2px;
+
+        @include mobile{
+            font-size: 9px;
+        }
+        
+
+        .highlights{
+            color: crimson;
+            font-family: "Open Sans";
+            
+
+        }
+    }
+}
+}
+}

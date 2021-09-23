@@ -1,0 +1,250 @@
+@import "../../global.scss";
+
+
+.portfolio{
+    background-color:#2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    height: 100% !important;
+
+
+
+    h1{
+        font-size: 50px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 15%;
+
+        
+        @include mobile {
+            font-size: 40px;
+        }
+
+    }
+    h1::before{
+        content: "";
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 200px;
+        height: 1px;
+        left: -8px;
+        background-color: crimson;
+    }
+    
+    h1::after{
+        content: "";
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 200px;
+        height: 1px;
+        left: 8px;
+        background-color: crimson;
+    }
+  
+
+    ul{
+        margin:10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        border-radius: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        align-items: center;
+        height: 5%;
+        
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+
+ 
+
+      
+    }
+
+    .container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden; 
+        margin: 5px auto  ; 
+       
+
+        @include mobile {
+            width:100%            
+        }
+
+
+        .item{
+            width: 350px;
+            overflow: hidden;
+            height: 250px;
+            border-radius: 20px;
+            border: 5px solid #f0efef;
+            margin: 30px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            
+            cursor: pointer;
+            box-shadow: -8px 3px 8px 0px #000000;
+            transition: all 2s ease-in-out;
+            
+
+
+            .projectLinks{
+                position: absolute;
+                z-index: 1;
+                top: 20px;
+                right: 30px;
+               display: flex;
+               @include mobile {
+                
+                top: 10px;
+                right: 5px;
+            }
+               
+
+                a{
+                    margin-left:25px;
+                    color: #fff2f2;
+                    font-size: 12px;
+
+                    @include mobile {
+                        margin-left:10px;
+
+                    }
+     
+              
+                }
+            }
+            
+
+
+            
+            @include mobile{
+                width: 60%;
+                height: 140px;
+                margin: 20px 30px;       
+                
+                
+                
+              }
+
+            h5{
+                position: absolute;
+                font-size: 12px;
+                text-align: center;
+                z-index: 1;
+                margin-top: 40%;
+                
+                font-weight: 500;
+                overflow: hidden;
+                color: #fff2f2;
+                letter-spacing: 0.2em;
+            }
+
+            h3{
+
+                position: absolute;
+                font-size: 20px;
+                z-index: 1;
+                color: white;
+                
+
+                @include mobile{
+                    font-size:15px; 
+
+                  }
+            }
+
+
+
+
+
+
+            img{
+
+                width: auto;
+                height: 350px;
+                object-fit: cover;
+                z-index: 1;
+                transition: transform .5s, filter 0.3s ease-in;
+                filter: grayscale(100%) brightness(40%);
+            
+                
+                
+
+                
+                
+            }
+
+            video{
+                width: auto;
+                height: 350px;
+                object-fit: cover;
+                z-index: 1;
+                transition: transform .5s, 
+                filter 0.3s ease-in;
+                filter: grayscale(100%) brightness(50%);
+            }
+
+            &:hover{
+                // background-color: $mainColor;
+
+                a{
+                    color: crimson
+                    ;
+                }
+                h3{
+                    color: transparent;
+                    transition: all 0.5s ease-in-out;
+
+                }
+
+
+                img{
+                    opacity: 1;
+                    filter: grayscale(0) brightness(100%) saturate(100%);
+                    transform: scale(1.1);
+
+                }
+
+                video{
+                    opacity: 1;
+                    filter: grayscale(0) brightness(100%) saturate(100%);
+                    transform: scale(1.1);
+                }
+
+                h5{
+                    color: crimson;
+                    font-weight: 800;
+                }
+
+
+
+            }
+        }
+
+
+ 
+    }
+    
+
+    }
