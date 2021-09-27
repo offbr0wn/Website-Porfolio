@@ -21,18 +21,18 @@ export default function Footer() {
 
 
                         <div>
-                            <p>Hello! 👋, My name is Shashank a Computer Science Graduate  from University of East Anglia, I enjoy creating 
+                            <p>Hello! 👋, I'm Shashank a Computer Science Graduate  from University of East Anglia, I enjoy creating 
                                  and designing things that live on the internet. My interest in web development started back in 2017 when I decided 
-                                to try editing custom elements within websites, this which lead me to explore the creative side of web design</p>
+                                to try editing custom elements within websites,  which lead me to explore the creative side of web design</p>
 
-                            <p>From a personal level, I am highly-motivated, result oriented, self-driven, 
+                            <p>On a personal level, I am highly-motivated, result oriented, self-driven, 
                                 hard-working, fast learner and constantly seeking to improve my skills!</p>
 
-                            <p> I have the ability to adapt to any type of team environment,and get along with others 
-                                when working in a group setting. I am passionate about coding and solving problems through codec 🙂, 
-                                and <span> i am excited to work</span> alongside other amazing programmers and learn so much more!. </p>
+                            <p> I have the ability to adapt to any type of environment,and get along with others 
+                                when working in a group setting. I am passionate about coding and solving problems through thinking outside the box 🙂.
+                                <span> I am excited to work</span> alongside other amazing programmers and learn so much more!</p>
 
-                                <p>Listed below are some languages and design tools im proficient in : </p>
+                                <p>Listed below are some of the languages and design tools i'm proficient in : </p>
                         </div>
                         <ul>
                             <h3>Programming :</h3>
